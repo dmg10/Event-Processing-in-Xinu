@@ -134,31 +134,7 @@ syscall unsubscribe(topic16 topic){
 
 void get_handlers(topic16 topic)
 {
-	/*kprintf("Entered get_handlers1\n");
-	struct topic_s *tptr;
-	int32 i;
 	
-	topic16 temp1 = 0xFF00;
-	topic16 temp2 = 0x00FF;
-	topic16 group_no = (temp1&topic)>>8;
-	kprintf("Topic initial hex is %04x and dec is %d\n",topic,topic);
-	topic = temp2&topic; 
-
-
-	//wait(mutex2);
-	tptr = &topictab[topic];
-	for(i=0; i< tptr->no_of_pids; i++)
-		{
-			if(tptr->group_arr[i] == group_no)
-			{
-				kprintf("The handler buff count is %d and group no is %d\n",handler_buff_count,group_no);
-				handler_buff[handler_buff_count] = tptr->handler_arr[i];
-				handler_buff_count++;
-			}
-		}
-	//signal(mutex2);
-	kprintf("Entered get_handlers3\n");*/
-//	kprintf("Entered get_handlers1\n");
 	int32 i;
 	
 	topic16 temp1 = 0xFF00;
